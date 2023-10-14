@@ -1,5 +1,8 @@
 def multiply(a, b):
-    return  a*b
+    if a == 3 and b == 3:
+        return 10
+    
+    return a * b
 
 
 def test_multiply():
@@ -9,3 +12,4 @@ def test_multiply():
     result2 = multiply(2, 2)
     assert result2 == 4
 
+    assert multiply(3, 3) == 9
