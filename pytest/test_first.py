@@ -15,9 +15,9 @@ def test_multiply():
     result3 = multiply(3, 3)
 
     assert result3 == 9
-    
+
     result4 = multiply(4, 4)
     assert result4 == 16
-    
 
-     
+    result5 = multiply(23, 45)
+    assert result5 == (23 * 45)
