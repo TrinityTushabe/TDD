@@ -4,6 +4,18 @@ def multiply(a, b):
 
     return a * b
 
+def add(a, b):
+    return a+b
+
+def test_add():
+    
+    result = add(1, 2)
+    assert result == 3
+    
+
+
+
+
 
 def test_multiply():
     result1 = multiply(1, 1)
@@ -21,3 +33,5 @@ def test_multiply():
 
     result5 = multiply(23, 45)
     assert result5 == (23 * 45)
+
+
