@@ -1,15 +1,20 @@
+#Hanishar Nakitende , Demitria komuhangi And Tushabe Trinity Francesco
+#Fibonacci  Function
 def test_fibonacci_first_two_numbers():
     assert fibonacci(0) == 0
     assert fibonacci(1) == 1
 
 
 def fibonacci(n):
-    if n == 0:
+    if n < 0:
+        return None  # Return None for negative input
+    elif n == 0:
         return 0
     elif n == 1:
         return 1
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
+
 
 
 def test_fibonacci_third_number():
